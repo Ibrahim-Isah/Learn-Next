@@ -1,11 +1,19 @@
+import Link from 'next/link';
+
 // -------------------------------------Static Generation ------------------------------------------
 
 export default function Home() {
-	return <h1>Rendring shit</h1>;
+	return (
+		<>
+			<h1>Rendring things</h1>
+			<Link href='/posts'>
+				<a>Posts</a>
+			</Link>
+		</>
+	);
 }
 
 // -------------------------- Routing Section -----------------------------------
-// import Link from 'next/link';
 // import { useRouter } from 'next/router';
 
 // export default function Home() {
