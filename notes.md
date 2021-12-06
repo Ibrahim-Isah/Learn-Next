@@ -14,3 +14,5 @@ This is going to take all keynotes as i am learning next js
 - getStaticProps function
   => only runs on the server side. why we see it on terminal not console. it never gets to client. its not bundle to code send to server.
   => it is allowed only on a page but not component file. use for prerendering not data fetching. return an object with a props key. it will run at build time also.
+
+// API Routes
