@@ -1,0 +1,22 @@
+.layout-header {
+	background-color: skyblue;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+}
+
+.layout-footer {
+	background-color: skyblue;
+	color: black;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}

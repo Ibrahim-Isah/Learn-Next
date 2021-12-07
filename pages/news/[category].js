@@ -1,6 +1,17 @@
-export default function ArticleListByCategory({ articles, category }) {
+import Head from 'next/head';
+
+export default function ArticleListByCategory({
+	articles,
+	category,
+	title,
+	description,
+}) {
 	return (
 		<>
+			<Head>
+				<title>{title}</title>
+				<meta type='description' content={description} />
+			</Head>
 			<h1>
 				Showing Article based on <i>{category}</i>
 			</h1>
@@ -31,10 +42,15 @@ export async function getServerSideProps(context) {
 	);
 	const data = await response.json();
 
+	const title = `${category} News`;
+	const description = `Some description about ${category}`;
+
 	return {
 		props: {
 			articles: data,
 			category,
+			title,
+			description,
 		},
 	};
 }
