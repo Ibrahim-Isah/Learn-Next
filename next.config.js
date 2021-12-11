@@ -1,3 +1,12 @@
 module.exports = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	redirects: async () => {
+		return [
+			{
+				source: '/contact',
+				destination: '/',
+				permanent: true,
+			},
+		];
+	},
+};

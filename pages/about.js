@@ -1,4 +1,5 @@
-import Footer from '../components/footer';
+import Footer from '../components/layout/footer';
+import Navbar from '../components/navbar';
 import Head from 'next/head';
 
 export default function About() {
@@ -19,6 +20,7 @@ export default function About() {
 About.getLayout = function PageLayout(page) {
 	return (
 		<>
+			<Navbar />
 			{page}
 			<Footer />
 		</>
